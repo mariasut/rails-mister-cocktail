@@ -1,0 +1,10 @@
+<div class="container">
+  <%= simple_form_for [@dose] do |f| %>
+    <%= f.input :description %>
+    <%= f.submit "add the description", class: "btn btn-primary" %>
+  <% end %>
+
+  <%= link_to "Delete", dose_path(dose), method: :delete %>
+</div>
+
+
